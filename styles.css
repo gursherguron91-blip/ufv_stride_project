@@ -1,0 +1,212 @@
+/* =============================
+   GLOBAL DARK THEME + RESET
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    background: #0e0e0e;
+    color: #e8e8e8;
+    line-height: 1.7;
+}
+
+/* =============================
+   HEADER + NAVIGATION
+============================= */
+header {
+    background: #111;
+    padding: 18px 10px 25px;
+    border-bottom: 2px solid #00ff88;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+}
+
+header h1 {
+    font-size: 2.1rem;
+    color: #00ff88;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #d8d8d8;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+nav a:hover {
+    color: #00ff88;
+    text-shadow: 0 0 8px #00ff88;
+}
+
+/* =============================
+   PAGE CONTAINER
+============================= */
+.container {
+    max-width: 900px;
+    margin: 45px auto;
+    background: #181818;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.12);
+    opacity: 0;
+}
+
+/* HEADERS */
+h2 {
+    font-size: 2rem;
+    color: #00ff88;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: #7dffbf;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* TEXT */
+p, li {
+    font-size: 1.15rem;
+    color: #d0d0d0;
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+/* =============================
+   BUTTONS
+============================= */
+button, .btn {
+    background: #00ff88;
+    color: #000;
+    padding: 12px 26px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+button:hover, .btn:hover {
+    background: #00cc70;
+    box-shadow: 0 0 12px #00ff88;
+}
+
+/* =============================
+   INPUT FIELDS
+============================= */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    background: #0f0f0f;
+    border: 2px solid #00ff88;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00cc70;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+/* =============================
+   GRID SECTIONS
+============================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.card {
+    padding: 20px;
+    background: #141414;
+    border-left: 4px solid #00ff88;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,255,136,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0,255,136,0.28);
+}
+
+/* =============================
+   VIDEO PLAYER
+============================= */
+video {
+    width: 100%;
+    margin-top: 18px;
+    border-radius: 10px;
+    border: 2px solid #00ff88;
+}
+
+/* =============================
+   FOOTER
+============================= */
+footer {
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    color: #888;
+}
+
+/* =============================
+   PAGE ANIMATIONS
+============================= */
+.fade {
+    animation: fadeIn 0.9s forwards;
+}
+.slide-left {
+    animation: slideLeft 0.8s forwards;
+}
+.slide-right {
+    animation: slideRight 0.8s forwards;
+}
+.slide-up {
+    animation: slideUp 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideLeft {
+    from { opacity: 0; transform: translateX(-60px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+    from { opacity: 0; transform: translateX(60px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(60px); }
+    to   { opacity: 1; transform: translateY(0); }
+
+}
+
